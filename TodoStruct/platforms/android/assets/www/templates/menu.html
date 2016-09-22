@@ -1,0 +1,32 @@
+
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+        <div class="bar bar-header">
+            <button class="button button-icon button-clear ion-navicon" menu-toggle="left" style="color:white"></button>
+            <img class="button" src="img/ionic.png" style="width:35px;height:35px;padding:2px;border-style:none;" />
+            <h1 class="title" style="color:white">Todo Struct</h1>
+        </div>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="left">
+        <ion-header-bar style="background-color:rgb(11, 76, 95);">
+            <h1 class="title" style="color:white">Menu</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <!--<ion-item menu-close href="#/app/TakeImage">
+                    <i class="icon ion-android-camera" style="font-size:18px"></i>
+                    Take Photo
+                </ion-item>-->
+                <ion-item menu-close href="#/app/geoLocation">
+                    <i class="icon icon ion-android-pin" style="font-size:18px"></i>
+                    GeoLocation
+                </ion-item>
+                <ion-item menu-close ng-click="logout()">
+                    <i class="icon ion-power" style="font-size:18px"></i>
+                    Logout
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

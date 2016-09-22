@@ -1,0 +1,36 @@
+<div class="bar bar-header">
+    <img class="button" src="img/ionic.png" style="width:35px;height:35px;padding:2px;border-style:none;" />
+    <h1 class="title" style="color:white">Todo Struct</h1>
+</div>
+<ion-view view-title="Todo Struct">
+    <div class="bar bar-subheader">
+        <h1 class="title" style="color:black">Login</h1>
+    </div>
+  <ion-content class="has-header" padding="true" style="margin-top:44px">
+      <div class="app-logo" style="text-align:center;margin:5px">
+          <img src="img/ionic.png">
+      </div>
+      <div>
+          <label class="item item-input">
+              <label class="fontawesome-user" for="login__username" style="color:#CC3300;">
+                  <span style="margin-right:80px;"></span>
+              </label>
+              <input type="text" placeholder="Enter user name" style="display:inline-block" ng-model="loginData.username">
+          </label>
+      </div>
+      <div>
+          <label class="item item-input">
+              <label class="fontawesome-lock" for="login__password" style="color:#CC3300;">
+                  <span style="margin-right:80px;"></span>
+              </label>
+              <input type="password" placeholder="Enter password" ng-model="loginData.password">
+          </label>
+      </div>
+      <div class="col"></div>
+      <div class="form__field" style="text-align:center">
+          <button class="button button-block button-positive" ng-click="doLogin()">Sign in</button>
+          <a class="button button-clear button-positive" href="#/register" style="margin-top: -10px;" ng-click="goRegister()">Create user</a>
+          <!--<a class="button button-clear button-positive" href="#/censor" style="margin-top: -10px;" ng-click="goRegister()">Save Censor</a>-->
+      </div>
+  </ion-content>
+</ion-view>

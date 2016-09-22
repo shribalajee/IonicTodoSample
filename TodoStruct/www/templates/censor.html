@@ -1,0 +1,29 @@
+﻿<div class="bar bar-header">
+    <img class="button" src="img/ionic.png" style="width:35px;height:35px;padding:2px;border-style:none;" />
+    <h1 class="title" style="color:white">Todo Struct</h1>
+</div>
+<ion-view view-title="Todo Struct">
+    <div class="bar bar-subheader">
+        <h1 class="title" style="color:black">Censor</h1>
+    </div>
+    <ion-content class="has-header" padding="true" style="margin-top:44px">
+        <div class="list">
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Site Id : </span>
+                <input type="text" ng-model="data.SiteId" placeholder="brj123">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Censor Id : </span>
+                <input type="text" ng-model="data.CensorId" placeholder="pass">
+            </label>
+            <label class="item item-input item-stacked-label">
+                <span class="input-label">Censor Value</span>
+                <input type="text" ng-model="data.CensorValue" placeholder="Anand Kumar">
+            </label>
+        </div>
+        <div class="form__field" style="text-align:center">
+            <button class="button button-positive" style="width:135px" ng-click="doSaveCensorData(data)">Save</button>
+            <button class="button button-positive" style="width:135px" ng-click="doSyncData()">Sync Data</button>
+        </div>
+    </ion-content>
+</ion-view>
